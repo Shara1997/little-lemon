@@ -1,0 +1,53 @@
+.hero-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #495e57;
+}
+
+.hero-img{
+    width: 12em;
+    height: 18em;
+    position: relative;
+    top: 2em;
+    left: -2em;
+}
+
+.hero-items{
+    display: grid;
+    width: 20em;
+    grid-gap: 0.5em;
+}
+h1{
+    margin-bottom: -0.5em;
+    font: 700 64pt 'Markazi Text', serif;
+    white-space: nowrap;
+    color: #f4ce14;
+}
+h3{
+    font: 400 40pt 'Markazi Text', serif;
+    color: white;
+}
+p{
+    padding-top: 0em;
+    font: 500 18pt 'Karla', sans-serif;
+    color: white;
+}
+
+.hero-items button{
+    margin-top: 0.5em;
+    width: 10em;
+    height: 1.8em;
+    font: 500 18pt 'Karla', sans-serif;
+    background-color: #f4ce14;
+    border: none;
+    color: #333333;
+    border-radius: 16pt;
+}
+.hero-items button:hover{
+    border: solid #f4ce14 0.2em;
+    background-color: #495e57;
+    color: white;
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+}
