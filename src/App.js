@@ -7,7 +7,7 @@ function App() {
     <>
     <Navbar />
     <HeroSection />
-    {/* <Highlights />
+    {/*  <Highlights />
     <Testimonials />
     <AboutSection />
     <FooterNav /> */}

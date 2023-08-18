@@ -5,11 +5,15 @@
     padding: 0 2em;
     width: 100%;
     height: 6em;
+    background-color: white;
+}
+.menu-icons{
+    display: none;
 }
 .nav-menu{
     display: grid;
     grid-template-columns: repeat(6,auto);
-    grid-gap: 3em;
+    grid-gap: 2em;
     list-style: none;
     align-items: center;
 }
@@ -44,4 +48,90 @@
     color: white;
     transition: all 0.1s ease-in;
     cursor: pointer;
+}
+.shopping{
+    position: relative;
+    right: 0.5em;
+    width: 1.8em;
+    height: 1.8em;
+    cursor: pointer;
+}
+.shopping:hover{
+    transform: scale(1.2);
+}
+
+@media  screen and (max-width: 850px) {
+    .navbar-tems{
+        padding: 2.5em 0em;
+        z-index: 9999;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #fbdabb;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -100;
+        padding: 4em 0em 1.5em 0em;
+        opacity: 0;
+        z-index: -1;
+        transition: 0.2s ease-in-out;
+    }
+    .nav-menu.active{
+        position: absolute;
+        top: 5em;
+        left: 0;
+        opacity: 1;
+        z-index: 1;
+        transition: 0.01s ease-in-out;
+    }
+    .nav-links{
+        display: block;
+        width: 100%;
+    }
+    .logo-img{
+        width: 9em;
+    }
+    .shopping{
+        position: relative;
+        right: 0em;
+    }
+    .menu-icons{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media  screen and (max-width: 1024px) and (min-width: 851px){
+    .nav-menu{
+        grid-gap: 0em;
+    }
+    .nav-links{
+        white-space: nowrap;
+    }
+    .logo-img{
+        width: 8em;
+        padding-left: 1em 0em 1.5em 0em;
+    }
+    .shopping{
+        width: 1.5em;
+        height: auto;
+        position: relative;
+        right: -0.8em;
+    }
+}
+
+@media  screen and (min-width: 1025px) {
+    .shopping{
+        width: 1.7em;
+        height: auto;
+        position: relative;
+        right: -0.8em;
+    }
+    .nav-links{
+        white-space: nowrap;
+    }
 }
