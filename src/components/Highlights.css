@@ -1,0 +1,134 @@
+.highlight-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 35em;
+}
+
+.heading-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 3em 0em 3em 0em;
+    grid-gap: 30em;
+    align-items: center;
+}
+
+.heading-items h3{
+    color: #333333;
+    font: 800 20pt 'Karla', sans-serif;
+}
+.menu-btn{
+    width: 7em;
+    height: 1.9em;
+    margin-left: 2em;
+    background-color: #f4ce14;
+    border: none;
+    border-radius: 16pt;
+    font: 500 18pt 'Karla', sans-serif;
+}
+.menu-btn:hover{
+    cursor: pointer;
+    background-color: #495e57;
+    color: white;
+}
+
+.dish-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 8em;
+    align-items: center;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5em;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 15px -5px;
+    width: 15.5em;
+    height: 20em;
+    border-radius: 16pt;
+}
+.dish-img img{
+    width: 15.5em;
+    height: 9em;
+    border-top-left-radius: 16pt;
+    border-top-right-radius: 16pt;
+    position: relative;
+    top: -0.55em;
+}
+
+.dish-title{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    text-align: left;
+}
+.dish-title h3{
+    font: 700 18pt 'Karla', sans-serif;
+    color: #333333;
+    text-align: left;
+    position: relative;
+    left: -1em;
+}
+
+.dish-title p{
+    font: 500 16pt 'Karla', sans-serif;
+    color: #333333;
+    position: relative;
+    top: 0.1em;
+    right: -1.2em;
+}
+
+.dish-description{
+    width: 15em;
+    height: 5em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.dish-description p{
+    color: #333333;
+    font: 400 16pt 'Karla', sans-serif;
+}
+.delivery p{
+    color: #333333;
+    font: 500 18pt 'Karla', sans-serif;
+}
+
+
+@media  screen and (max-width: 850px){
+    .highlight-container{
+        height: auto;
+    }
+    .heading-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-e;
+        align-items: center;
+    }
+    .heading-items h3{
+        margin-top: 3em;
+        margin-bottom: -15em;
+    }
+    .menu-btn{
+        position: relative;
+        top: -14em;
+        right: -4em;
+        font: 500 16pt 'Karla', sans-serif;
+        width: 7em;
+        height: 1.5em;
+    }
+    .dish-items{
+        display: flex;
+        flex-direction: column;
+        height: 10em;
+        margin-top: -10em;
+    }
+    .card-container{
+        margin: 0;
+        gap: -1em;
+    }
+}
