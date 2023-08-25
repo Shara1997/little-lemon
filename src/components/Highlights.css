@@ -52,6 +52,11 @@
     height: 20em;
     border-radius: 16pt;
 }
+.card-container:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
 .dish-img img{
     width: 15.5em;
     height: 9em;
@@ -71,6 +76,7 @@
     font: 700 18pt 'Karla', sans-serif;
     color: #333333;
     text-align: left;
+    width: 7em;
     position: relative;
     left: -1em;
 }
@@ -99,14 +105,13 @@
 }
 
 
-@media  screen and (max-width: 850px){
+@media  screen and (max-width: 639px){
     .highlight-container{
         height: auto;
     }
     .heading-items{
         display: flex;
         flex-direction: column;
-        justify-content: space-e;
         align-items: center;
     }
     .heading-items h3{
@@ -129,6 +134,165 @@
     }
     .card-container{
         margin: 0;
-        gap: -1em;
+        gap: 0.8em;
+        width: 13em;
+    }
+    .dish-img img{
+        width: 13em;
+    }
+
+    .dish-title h3{
+        position: relative;
+        left: 2.5em;
+        font: 700 16pt 'karla', sans-serif;
+    }
+    .dish-title p{
+        position: relative;
+        right: -4.3em;
+        font: 500 14pt 'karla', sans-serif;
+    }
+    .dish-description{
+        width: 12.8em;
+    }
+    .dish-description p{
+        margin-left: 0.1em;
+        width: 10em;
+        font: 400 14pt 'karla', sans-serif;
+    }
+    .delivery p{
+        position: relative;
+        left: 0.5em;
+        font: 500 16pt 'karla', sans-serif;
+        margin-bottom: 0.2em;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width:900px) {
+    .highlight-container{
+        position: relative;
+        top: 13em;
+    }
+    .heading-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5em;
+        align-items: center;
+        margin-top: -23em;
+    }
+    .heading-items h3{
+        white-space: nowrap;
+    }
+    .dish-items{
+        padding-left: 1.5em;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 3.5em;
+        overflow: hidden;
+        overflow-x: auto;
+        justify-items: flex-start;
+        padding-bottom: 1.5em;
+    }
+    .card-container{
+        width: 15em;
+    }
+    .dish-img img{
+        width: 15em;
+    }
+    .dish-title h3{
+        position: relative;
+        left: 4em;
+        font: 700 16pt 'karla', sans-serif;
+    }
+    .dish-title p{
+        position: relative;
+        right: -6.5em;
+        font: 500 14pt 'karla', sans-serif;
+    }
+    .dish-description{
+        width: 14em;
+    }
+    .dish-description p{
+        width: 12em;
+    }
+    .delivery p{
+        position: relative;
+        left: 2.5em;
+    }
+}
+
+@media  screen and (min-width:901px) and (max-width:1024px) {
+    .heading-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5em;
+        align-items: center;
+    }
+    .heading-items h3{
+        white-space: nowrap;
+    }
+    .dish-items{
+        padding-left: 1.5em;
+        padding-bottom: 1.2em;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 3.5em;
+        overflow: hidden;
+        overflow-x: auto;
+        justify-items: flex-start;
+    }
+    .dish-title h3{
+        position: relative;
+        left: 3.5em;
+        font: 700 16pt 'karla', sans-serif;
+    }
+    .dish-title p{
+        position: relative;
+        right: -6.5em;
+        font: 500 14pt 'karla', sans-serif;
+    }
+    .dish-description p{
+        width: 12.5em;
+    }
+    .delivery p{
+        position: relative;
+        left: 2.5em;
+    }
+}
+
+@media screen and (min-width:1025px){
+    .heading-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10em;
+        align-items: center;
+    }
+    .heading-items h3{
+        white-space: nowrap;
+    }
+    .dish-items{
+        width: 100%;
+        padding-left: 1.5em;
+        padding-bottom: 1.2em;
+        overflow: hidden;
+        overflow-x: auto;
+    }
+    .dish-title h3{
+        position: relative;
+        left: -1.8em;
+        font: 700 16pt 'karla', sans-serif;
+    }
+    .dish-title p{
+        position: relative;
+        right: -1em;
+        font: 500 14pt 'karla', sans-serif;
+    }
+    .dish-description p{
+        width: 12.5em;
+    }
+    .delivery p{
+        position: relative;
+        left: 0em;
     }
 }

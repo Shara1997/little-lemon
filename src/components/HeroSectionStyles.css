@@ -54,22 +54,24 @@ p{
 }
 
 
-@media  screen and (max-width: 639px){
+@media  screen and (min-width:320px) and (max-width: 639px){
     .hero-container{
-        padding-left: 0.5em;
-        padding-right: 0;
-        height: auto;
+        padding-left: 2em;
+        width: 100%;
     }
 
     h1{
         font: 500 45pt 'Markazi Text', serif;
+        padding-left: 0.1em;
     }
     h3{
         font: 400 30pt 'Markazi Text', serif;
+        padding-left: 0.1em;
     }
     p{
         width: 10.8em;
         font: 400 16pt 'Karla', sans-serif;
+        padding-left: 0.3em;
     }
     .hero-items{
         padding-right: 0.2em;
@@ -77,14 +79,19 @@ p{
     .hero-items button{
         width: 8em;
         font: 500 16pt 'Karla', sans-serif;
-        margin-bottom: 0.2em;
+        position: relative;
+        left: 0.3em;
+        width: 10em;
+        height: 1.5em;
+        margin-bottom: 0.5em;
     }
     .hero-img{
-        width: 8em;
+        width: 6em;
         height: auto;
         border-radius: 16pt;
         position: relative;
-        top: 1em;
+        top: 1.5em;
+        padding-left: 0.5em;
     }
 }
 @media  screen and (max-width: 1024px) and (min-width:640px){

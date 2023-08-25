@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import Highlights from './components/Highlights';
+import Testimonial from './components/Testimonial';
 
 function App() {
   return (
@@ -9,8 +10,8 @@ function App() {
     <Navbar />
     <HeroSection />
     <Highlights />
-   {/*} <Testimonials />
-    <AboutSection />
+    <Testimonial />
+    {/*<AboutSection />
     <FooterNav /> */}
     </>
   );
