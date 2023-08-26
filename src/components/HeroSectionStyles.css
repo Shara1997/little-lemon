@@ -27,12 +27,12 @@ h1{
 }
 h3{
     font: 400 40pt 'Markazi Text', serif;
-    color: white;
+    color: #edefee;
 }
 p{
     padding-top: 0em;
     font: 500 18pt 'Karla', sans-serif;
-    color: white;
+    color: #edefee;
 }
 
 .hero-items button{
@@ -48,7 +48,7 @@ p{
 .hero-items button:hover{
     border: solid #f4ce14 0.2em;
     background-color: #495e57;
-    color: white;
+    color: #edefee;
     transition: all 0.1s ease-in;
     cursor: pointer;
 }

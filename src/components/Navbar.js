@@ -11,7 +11,7 @@ class Navbar extends Component {
     }
     render() {
         return (
-            <nav className="navbar-tems">
+            <nav className="navbar-items">
                 <div className="menu-icons" onClick={this.handleClick}>
                     <i className={this.state.clicked ? "fa-regular fa-circle-xmark" : "fa-solid fa-bars"}></i>
                 </div>

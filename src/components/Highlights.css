@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: #edefee;
     height: 35em;
 }
 
@@ -31,14 +31,15 @@
 .menu-btn:hover{
     cursor: pointer;
     background-color: #495e57;
-    color: white;
+    color: #edefee;
 }
 
 .dish-items{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 8em;
+    grid-gap: 6em;
     align-items: center;
+    justify-items: center;
 }
 
 .card-container{
@@ -63,7 +64,7 @@
     border-top-left-radius: 16pt;
     border-top-right-radius: 16pt;
     position: relative;
-    top: -0.55em;
+    top: -0.6em;
 }
 
 .dish-title{

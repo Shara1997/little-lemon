@@ -1,11 +1,11 @@
-.navbar-tems{
+.navbar-items{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 0 2em;
     width: 100%;
     height: 6em;
-    background-color: white;
+    background-color: #edefee;
 }
 .menu-icons{
     display: none;
@@ -16,6 +16,7 @@
     grid-gap: 2em;
     list-style: none;
     align-items: center;
+    padding-top: 1.5em;
 }
 .nav-links{
     text-decoration: none;
@@ -29,12 +30,16 @@
 }
 .nav-links:hover{
     background-color: #495e57;
-    color: white;
+    color: #edefee;
     border-radius: 16pt;
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
 }
 
 .login-button{
+    position: relative;
+    top: -0.3em;
+    right: -2.8em;
     width: 5em;
     height: 1.5em;
     font: 500 16pt 'Karla', sans-serif;
@@ -45,7 +50,7 @@
 
 .login-button:hover{
     background-color: #495e57;
-    color: white;
+    color: #edefee;
     transition: all 0.1s ease-in;
     cursor: pointer;
 }
@@ -61,7 +66,7 @@
 }
 
 @media  screen and (max-width: 850px) {
-    .navbar-tems{
+    .navbar-items{
         padding: 2.5em 0em;
         z-index: 9999;
     }

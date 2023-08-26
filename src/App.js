@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import Highlights from './components/Highlights';
 import Testimonial from './components/Testimonial';
+import AboutSection from './components/AboutSection';
+import FooterNav from './components/FooterNav';
 
 function App() {
   return (
@@ -11,8 +13,8 @@ function App() {
     <HeroSection />
     <Highlights />
     <Testimonial />
-    {/*<AboutSection />
-    <FooterNav /> */}
+    <AboutSection />
+    <FooterNav />
     </>
   );
 }
