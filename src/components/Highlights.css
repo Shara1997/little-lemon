@@ -100,9 +100,13 @@
     color: #333333;
     font: 400 16pt 'Karla', sans-serif;
 }
-.delivery p{
+.delivery a{
     color: #333333;
     font: 500 18pt 'Karla', sans-serif;
+    text-decoration: none !important;
+}
+.delivery a:hover{
+    color: #ee9972;
 }
 
 

@@ -1,0 +1,138 @@
+.reservation-container{
+    background-color: #fbdabb;
+    text-align: center;
+    padding: 5em 3em;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+h2{
+    font: 700 42pt 'markazi', serif;
+    color: #495e57;
+    margin-top: -1em;
+}
+.reservation-container h3{
+    font: 700 20pt 'karla', sans-serif;
+    color: #333333;
+    padding-bottom: 2em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 60vw;
+    height: 105vh;
+    border: #333333 solid 0.02em;
+    border-radius: 16pt;
+    background-color: #ee9972;
+}
+fieldset{
+    border-radius: 16pt;
+    border: none;
+    height: 45em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 1.5em;
+    text-align: right;
+}
+label{
+    text-align: right;
+    padding: 1.5em 1.5em;
+    font: 500 16pt 'karla', sans-serif;
+    
+}
+input{
+    border: none;
+    font: 400 14pt 'karla', sans-serif;
+    margin-left: 0.5em;
+    width: 10em;
+    height: 1.5em;
+    box-shadow: 0px 0px 15px -5px;
+    padding-left: 0.5em;
+}
+input:focus{
+    color: #333333;
+    border: #f4ce14 0.01em solid;
+}
+
+sup{
+    color: red;
+}
+select{
+    width: 10em;
+    position: relative;
+    box-shadow: 0px 0px 15px -5px;
+}
+option{
+    font: 400 12pt 'karla', sans-serif;
+}
+
+.phone-number{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 27.5em;
+    top: 26.5em;
+}
+.phone-number label{
+    position: relative;
+    top: -0.3em;
+}
+.phone-number p{
+    font: 400 10pt 'karla', sans-serif;
+    position: relative;
+    top: 4.5em;
+    left: -8em;
+}
+.phone{
+    width: 10em;
+    height: 1.5em;
+    position: relative;
+    top: 1.5em;
+    left: -0.2em;
+}
+.reserve-button{
+    padding-top: 3em;
+}
+.reserve-button button{
+    font: 500 18pt 'karla', sans-serif;
+    width: 12em;
+    height: 2em;
+    border: none;
+    border-radius: 16pt;
+    color: #333333;
+    background-color: #f4ce14;
+    position: relative;
+    bottom: 1em;
+    cursor: pointer;
+}
+.reserve-button button:hover{
+    color: white;
+    background-color: #495e57;
+}
+
+.reserve-button button:disabled,
+.reserve-button button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.date{
+    position: relative;
+    top: 3em;
+}
+.occasions, .guests, .time{
+    position: relative;
+    left: -1em;
+    top: 2.5em;
+}
+
+.occasions select, .guests select, .time select{
+    padding-left: 0.3em;
+    margin-left: 0.3em;
+    margin-right: -0.5em;
+}

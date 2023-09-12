@@ -3,6 +3,7 @@ import DishCard from './DishCard';
 import GreekSalad from '../assets/greeksalad.jpg';
 import Bruchetta from '../assets/bruchetta.jpg';
 import LemonDessert from '../assets/lemonDessert.jpg';
+import { Link } from 'react-router-dom';
 
 function Highlights() {
     return (
@@ -10,7 +11,10 @@ function Highlights() {
             <section className="highlight-container">
                 <div className="heading-items">
                     <h3>This week special!</h3>
-                    <button className="menu-btn">Online Menu</button>
+                    <Link to='/menu'>
+                        <button className="menu-btn">Online Menu</button>
+                    </Link>
+
                 </div>
                 <div className="dish-items">
                     <DishCard

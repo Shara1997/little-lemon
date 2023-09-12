@@ -1,18 +1,21 @@
 import './HeroSectionStyles.css';
-import HeroImg from '../assets/restauranfood.jpg'
+import { Link } from 'react-router-dom';
 
-function HeroSection(){
-    return(
+function HeroSection(props) {
+    return (
         <>
-        <section className="hero-container">
-            <div className="hero-items">
-                <h1>Little Lemon</h1>
-                <h3>Chicago</h3>
-                <p>We are a family owned Mediterranean restaurant, focused on traditional recipies served with a modern twist.</p>
-                <button>Reserve a table</button>
-            </div>
-            <img src={HeroImg} alt="" className="hero-img" />
-        </section>
+            <section className={props.cName}>
+                <div className="hero-items">
+                    <h1>{props.title1}</h1>
+                    <h3>{props.title2}</h3>
+                    <p>{props.text}</p>
+                    <Link to={props.url}>
+                        <button className={props.btnClass}>{props.btnName}</button>
+                    </Link>
+
+                </div>
+                <img src={props.heroImg} alt="" className={props.imgClass} />
+            </section>
         </>
     )
 }

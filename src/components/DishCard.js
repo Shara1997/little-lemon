@@ -14,7 +14,7 @@ function DishCard({title, price, imgUrl, description,delivery}){
                 <p>{description}</p>
             </div>
             <div className="delivery">
-                <p>Order for Delivery <i class="fa-solid fa-person-biking"></i></p>
+                <a href="/">Order for Delivery <i class="fa-solid fa-person-biking"></i></a>
 
             </div>
         </section>

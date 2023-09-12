@@ -14,20 +14,25 @@
     padding-left: 5em;
 }
 .about-items h1{
-    margin-bottom: -0.9em;
     font: 700 64pt 'Markazi Text', serif;
     white-space: nowrap;
     color: #f4ce14;
 }
-.about-items h3{
+.about-container .about-items h3{
     font: 400 40pt 'Markazi Text', serif;
     color: #333333;
+    position: relative;
+    top: 1.3em;
+    left: -9.3em;
 }
-.about-items p{
+.about-container .about-items p{
     width: 20em;
     padding-top: 0em;
     font: 500 18pt 'Karla', sans-serif;
     color: #333333;
+    position: relative;
+    top: 2em;
+    left: 2em;
 }
 .img-container{
     display: flex;

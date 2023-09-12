@@ -1,0 +1,20 @@
+.about-items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    padding: 5em 1em;
+
+}
+
+.about-items p{
+    font: 500 18pt 'Karla', sans-serif;
+    text-align: left;
+    width: 30em;
+    position: relative;
+    left: 1em;
+}
+
+.about-items img{
+    width: 30em;
+
+}
