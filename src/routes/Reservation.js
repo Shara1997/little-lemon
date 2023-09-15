@@ -1,4 +1,4 @@
-import FooterNav from '../components/FooterNav';
+
 import Navbar from '../components/Navbar'
 import ReservationForm from '../components/ReservationForm';
 
@@ -8,7 +8,6 @@ function Reservation(){
         <>
         <Navbar />
         <ReservationForm />
-        <FooterNav />
         </>
     )
 }

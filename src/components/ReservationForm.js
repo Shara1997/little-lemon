@@ -1,18 +1,28 @@
 import { Link } from "react-router-dom";
 import "./ReservationForm.css"
 import { useState } from 'react';
-import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input/input";
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input/input'
 
 function ReservationForm() {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
-    const [value, setValue] = useState();
+    const [value, setValue] = useState("")
+    const [date, setDate] = useState("")
+    const [time, setTime] = useState("")
+    const [occasion, setOcassion] = useState("")
+    const [tableFor, setTableFor] = useState("")
 
     const clearForm = () => {
         setFirstName("")
         setLastName("")
         setEmail("")
+        setValue("")
+        setDate("")
+        setTime("")
+        setOcassion("")
+        setTableFor("")
     }
 
     const handleSubmit = () => {
@@ -27,23 +37,28 @@ function ReservationForm() {
             );
     };
 
+
     const getIsFormValid = () => {
         return (
             firstName &&
             lastName &&
             validateEmail(email) &&
-            value
+            value &&
+            date &&
+            time &&
+            occasion &&
+            tableFor
         )
     }
 
     return (
         <>
             <section className="reservation-container">
-                <h2>Reserve Your Table</h2>
-                <h3>Online Reservation</h3>
                 <form onSubmit={handleSubmit}>
+                    <h2>Reserve Your Table</h2>
+                    <p>Please fill in and submit form to book your reservation at Little Lemon.</p>
                     <fieldset>
-                        <div>
+                        <div className="first-name">
                             <label htmlFor="fName" required>First Name:<sup>*</sup></label>
                             <input value={firstName}
                                 onChange={(e) => {
@@ -52,7 +67,7 @@ function ReservationForm() {
                                 type="text" placeholder="First Name" id="fName" name="fName"
                                 minLength="8" maxLength="25" required />
                         </div>
-                        <div>
+                        <div className="last-name">
                             <label htmlFor="lName">Last Name:<sup>*</sup></label>
                             <input value={lastName}
                                 onChange={(e) => {
@@ -61,7 +76,7 @@ function ReservationForm() {
                                 type="text" placeholder="Last Name" id="lName" name="lName"
                                 minLength="8" maxLength="25" required />
                         </div>
-                        <div>
+                        <div className="email-address">
                             <label htmlFor="email">Email Address:<sup>*</sup></label>
                             <input value={email}
                                 onChange={(e) => {
@@ -70,25 +85,31 @@ function ReservationForm() {
                                 type="email" placeholder="Email Address" id="email" name="email" required />
                         </div>
                         <div className="phone-number">
-                            <label htmlFor="phone-numner">Phone Number:<sup>*</sup> </label>
+                            <label htmlFor="phone-number">Phone Number:<sup>*</sup> </label>
                             <PhoneInput
-                                id="phone-number"
-                                className="phone"
-                                country='US'
+                            className="phone"
                                 placeholder="Phone number"
                                 value={value}
+                                country="US"
+                                international = {false}
                                 onChange={setValue}
-                                />
-                            <p>{value && isValidPhoneNumber(value) ? 'Number Valid' : 'Number Not Valid'}</p>
+                                maxLength = "14"
+                                 />
 
                         </div>
                         <div className="date">
                             <label htmlFor="booking-date">Date:<sup>*</sup></label>
-                            <input type="date" id="booking-date" name="booking-date" required />
+                            <input type="date" placeholder="Reservation Date" id="booking-date" name="booking-date" required
+                                onChange={(e) => {
+                                    setDate(e.target.value)
+                                }} />
                         </div>
                         <div className="time">
                             <label htmlFor="booking-time">Time:<sup>*</sup></label>
-                            <select name="booking-time" id="booking-time">
+                            <select name="booking-time" id="booking-time" onChange={(e) => {
+                                setTime(e.target.value)
+                            }}>
+                                <option value="" disabled selected>Reservation Time</option>
                                 <option value="16:00">16:00</option>
                                 <option value="16:30">16:30</option>
                                 <option value="17:00">17:00</option>
@@ -104,14 +125,20 @@ function ReservationForm() {
                         </div>
                         <div className="occasions">
                             <label htmlFor="occasion">Occassion:<sup>*</sup></label>
-                            <select name="occasion" id="occasion">
+                            <select name="occasion" id="occasion" onChange={(e) => {
+                                setOcassion(e.target.value)
+                            }}>
+                                <option value="" disabled selected>Select Occasion</option>
                                 <option value="B">Birthday</option>
                                 <option value="A">Anniversary</option>
                             </select>
                         </div>
                         <div className="guests">
                             <label htmlFor="table-for">Table For:<sup>*</sup></label>
-                            <select name="people" id="table-for">
+                            <select name="people" id="table-for" onChange={(e) => {
+                                setTableFor(e.target.value)
+                            }}>
+                                <option value="" disabled selected>Number of Guests </option>
                                 <option value="2">2</option>
                                 <option value="4">4</option>
                                 <option value="6">6</option>
@@ -119,12 +146,13 @@ function ReservationForm() {
                                 <option value="10">10</option>
                             </select>
                         </div>
-                    </fieldset>
-                    <div className="reserve-button">
+                        <div className="reserve-button">
                         <Link to="/confirmation">
                             <button type="submit" disabled={!getIsFormValid()}>Reserve</button>
                         </Link>
                     </div>
+                    </fieldset>
+                    
                 </form>
             </section>
         </>

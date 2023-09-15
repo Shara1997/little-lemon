@@ -1,9 +1,87 @@
 .confirmation-container{
-    background-color: #fbdabb;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.73)), url("https://images.unsplash.com/photo-1538334421852-687c439c92f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
     text-align: center;
     padding: 5em 3em;
     display: flex;
     flex-direction: column;
     place-items: center;
     width: 100%;
+    height: 83vh;
+}
+
+.success{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 1.5em;
+    background-color: #edefeecd;
+    width: 70vw;
+    height: 50vh;
+}
+
+.success h2{
+    font: 700 30pt 'karla', sans-serif;
+    margin-top: 3em;
+    color: #ee9972;
+    text-shadow: 0.05em 0.02em #333333;
+}
+
+.success h3{
+    font: 500 20pt 'karla', sans-serif;
+    margin-top: 2em;
+    color: #495e57;
+}
+
+@media  screen and (max-width: 639px){
+    .confirmation-container{
+        width: 100%;
+        overflow: hidden;
+    }
+    .success{
+        width: 80vw;
+    }
+    .success h2{
+        font: 600 26pt 'karla', sans-serif;
+        width: 12em;
+        margin-top: 2em;
+    }
+    .success h3{
+        font: 500 18pt 'karla', sans-serif;
+        padding: 0em 0.2em;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width:900px){
+    .success{
+        width: 77vw;
+    }
+
+    .success h2{
+        margin-top: 2.5em;
+        padding: 0em 0.1em;
+    }
+    .success h3{
+        padding: 0em 0.3em;
+    }
+}
+
+@media  screen and (min-width:901px) and (max-width:1024px){
+    .success{
+        width: 75vw;
+    }
+    .success h2{
+        font: 700 28pt 'karla', sans-serif;
+        padding: 0em 1em;
+        margin-top: 3em;
+    }
+}
+
+@media screen and (min-width:1025px){
+    .success{
+        width: 75vw;
+    }
+    .success h2{
+        padding: 0em 0.2em;
+    }
 }

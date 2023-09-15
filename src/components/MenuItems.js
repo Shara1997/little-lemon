@@ -18,10 +18,5 @@ export const MenuItems = [
         title: 'Reservation',
         url: '/reservation',
         cName: 'nav-links'
-    },
-    {
-        title: 'Order Online',
-        url: '/orderonline',
-        cName: 'nav-links'
     }
 ]
