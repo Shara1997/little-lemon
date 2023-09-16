@@ -1,4 +1,4 @@
-import '../components/ConfirmEntry.css'
+import '../components/Styles/ConfirmEntry.css'
 
 function ConfirmEntry() {
     return (

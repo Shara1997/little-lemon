@@ -1,4 +1,4 @@
-import './Highlights.css'
+import '../components/Styles/Highlights.css'
 
 function DishCard({title, price, imgUrl, description,delivery}){
     return(

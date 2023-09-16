@@ -1,4 +1,4 @@
-import './HeroSectionStyles.css';
+import '../components/Styles/HeroSectionStyles.css';
 import { Link } from 'react-router-dom';
 
 function HeroSection(props) {

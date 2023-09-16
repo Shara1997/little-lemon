@@ -1,4 +1,4 @@
-import './FooterNav.css'
+import '../components/Styles/FooterNav.css'
 import LittleLogo from '../assets/littlelemonlogo.png'
 import { DoormatNavItems } from "./DoormatNavItems";
 import { ContactItems } from './ContactItems';

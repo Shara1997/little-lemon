@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import Logo from "../assets/Logo .svg";
 import { MenuItems } from "./MenuItems";
-import './NavbarStyles.css';
+import '../components/Styles/NavbarStyles.css';
 import ShoppingBasket from '../assets/Basket.svg'
 import { Link } from 'react-router-dom';
 

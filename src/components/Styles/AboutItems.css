@@ -6,12 +6,14 @@
 
 }
 
+
 .about-items p{
     font: 500 18pt 'Karla', sans-serif;
     text-align: left;
     width: 30em;
     position: relative;
     left: 1em;
+    color: #333333;
 }
 
 .about-items img{

@@ -1,13 +1,14 @@
 
 import Navbar from '../components/Navbar'
-import ReservationForm from '../components/ReservationForm';
+import Booking from '../components/Booking';
+
 
 
 function Reservation(){
     return(
         <>
         <Navbar />
-        <ReservationForm />
+        <Booking />
         </>
     )
 }

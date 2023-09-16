@@ -1,4 +1,4 @@
-import './Highlights.css';
+import '../components/Styles/Highlights.css';
 import DishCard from './DishCard';
 import GreekSalad from '../assets/greeksalad.jpg';
 import Bruchetta from '../assets/bruchetta.jpg';

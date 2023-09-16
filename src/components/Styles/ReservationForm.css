@@ -59,7 +59,7 @@ input:focus{
     border: #f4ce14 0.01em solid;
 }
 
-sup{
+.field-star{
     color: red;
 }
 select{
@@ -128,10 +128,15 @@ option{
     top: 3em;
     margin-top: 0.9em;
 }
-.occasions, .guests, .time{
+.occasions, .time{
     position: relative;
     left: -1em;
     top: 2.5em;
+}
+.guests{
+    position: relative;
+    left: 0.3em;
+    top: 3em;
 }
 
 .occasions select, .guests select, .time select{

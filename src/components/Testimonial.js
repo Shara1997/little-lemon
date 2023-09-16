@@ -1,6 +1,6 @@
-import './Testimonial.css';
 import TestimonialCard from './TestimonialCard';
-import User from '../assets/user.png'
+import User from '../assets/user.png';
+import '../components/Testimonial.css';
 
 function Testimonial() {
     return (

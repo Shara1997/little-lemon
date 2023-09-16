@@ -1,4 +1,4 @@
-import "./AboutItems.css"
+import "../components/Styles/AboutItems.css"
 import Chefs1 from "../assets/Chefs1.jpg"
 
 function AboutItems(){

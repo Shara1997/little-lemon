@@ -1,4 +1,4 @@
-import './AboutSection.css'
+import '../components/Styles/AboutSection.css'
 import Restaurant from '../assets/restaurant.jpg'
 import Chef from '../assets/restaurant chef B.jpg'
 
