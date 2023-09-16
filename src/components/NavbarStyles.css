@@ -13,7 +13,7 @@
 .nav-menu{
     display: grid;
     grid-template-columns: repeat(6,auto);
-    grid-gap: 2em;
+    grid-gap: 2.5em;
     list-style: none;
     align-items: center;
     padding-top: 1.5em;
@@ -39,7 +39,7 @@
 .login-button{
     position: relative;
     top: -0.3em;
-    right: -2.8em;
+    margin-left: 10em;
     width: 5em;
     height: 1.5em;
     font: 500 16pt 'Karla', sans-serif;
@@ -60,12 +60,66 @@
     width: 1.8em;
     height: 1.8em;
     cursor: pointer;
+    margin: 0em 0.5em;
 }
 .shopping:hover{
     transform: scale(1.2);
 }
 
-@media  screen and (max-width: 850px) {
+
+@media  screen and (max-width: 639px){
+    .navbar-items{
+        width: 100%;
+        overflow: hidden;
+    }
+    .navbar-items{
+        padding: 2.5em 0em;
+        z-index: 9999;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #fbdabb;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -100;
+        padding: 4em 0em 1.5em 0em;
+        opacity: 0;
+        z-index: -1;
+        transition: 0.2s ease-in-out;
+    }
+    .nav-menu.active{
+        position: absolute;
+        top: 5em;
+        left: 0;
+        opacity: 1;
+        z-index: 1;
+        transition: 0.01s ease-in-out;
+    }
+    .nav-links{
+        display: block;
+        width: 100%;
+    }
+    .logo-img{
+        width: 9em;
+    }
+    .shopping{
+        position: relative;
+        right: 0em;
+    }
+    .menu-icons{
+        display: block;
+        cursor: pointer;
+    }
+}
+@media  screen and (min-width: 640px) and (max-width:900px) {
+    .navbar-items{
+        width: 100%;
+        overflow: hidden;
+    }
     .navbar-items{
         padding: 2.5em 0em;
         z-index: 9999;
@@ -110,9 +164,16 @@
     }
 }
 
-@media  screen and (max-width: 1024px) and (min-width: 851px){
+@media  screen and (min-width:901px) and (max-width:1024px){
+    .navbar-items{
+        width: 100%;
+        overflow: hidden;
+    }
     .nav-menu{
         grid-gap: 0em;
+        justify-content: center;
+        position: relative;
+        left: 2em;
     }
     .nav-links{
         white-space: nowrap;
@@ -121,11 +182,17 @@
         width: 8em;
         padding-left: 1em 0em 1.5em 0em;
     }
+    .login-button{
+        position: relative;
+        right: 5em;
+        width: 5em;
+        font: 500 15pt 'Karla', sans-serif;
+    }
     .shopping{
         width: 1.5em;
         height: auto;
         position: relative;
-        right: -0.8em;
+        right: 1em;
     }
 }
 
@@ -136,7 +203,19 @@
         position: relative;
         right: -0.8em;
     }
+    .logo-img{
+        padding-right: 1em;
+    }
     .nav-links{
         white-space: nowrap;
+    }
+    .login-button{
+        position: relative;
+        right: -3em;
+        margin: 0;
+    }
+    .nav-menu{
+        margin: 0em 0.5em;
+        grid-gap: 2em;
     }
 }
